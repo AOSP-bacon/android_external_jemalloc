@@ -17,7 +17,9 @@
 LOCAL_PATH := $(call my-dir)
 
 jemalloc_common_cflags := \
-	-std=gnu99 \
+        -O3 \
+        -funroll-loops \
+	-std=gnu11 \
 	-D_REENTRANT \
 	-fvisibility=hidden \
 	-Wno-unused-parameter \
